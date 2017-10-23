@@ -1,16 +1,32 @@
+//- require("./img/img_x1.png")
+
 doctype html
 html(lang="en")
   head
     title= pageTitle
+    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js')
+    //- link(rel="stylesheet", href='node_modules/normalize.css/normalize.css')
+    //- script(src='node_modules/pixi.js/dist/pixi.min.js')
   body
-    include includes/header.pug
-    #container.col
-      if youAreUsingPug
+    img.non(src= require("./img/img_x2.png"))
+    img.non(src= require("./img/clouds_1.jpg"))
+    img.non(src= require("./img/clouds_2.jpg"))
+
+    //- img(src="/img/img_x1.png" alt="Image Title")
+    div#jello-container
+      
+      //- img.logo.social(src= require("./img/muhaparty.svg"))
+      //- div.social
+      //-   img(src= require("./img/inst.svg"))
+      //-   img(src= require("./img/vk.svg"))
+      //- if youAreUsingPug
         p You are amazing
-      else
+      //- else
         p Get on it!
-      p.
+      //- p.
         Pug is a terse and simple templating language with a
         strong focus on performance and powerful features.
-      div
-        img(src= require("./img/img.png"))
+
+
+
+        //- img(src= require("./img/vk.svg"))

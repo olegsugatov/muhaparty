@@ -1,3 +1,3 @@
-# webpack-bootstrap-starter
+# Muhaparty
 npm run dev
 npm run prod

@@ -1,11 +1,32 @@
+@import "node_modules/normalize.css/normalize";
+
 html, body {
-	height: 100%;
-	min-height: 100%;
-	/*background: url('./img/img.png') center center no-repeat;*/
+	// margin: 0;
+	// padding: 0;
+	// height: 100%;
+	// min-height: 100%;
+	// background: url('./img/img_x2.png') center center no-repeat;
 }
 
-body {
-	h1 {
-		color: deeppink;
-	}
+.jello-container {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+	// background: url('./img/img_x2.png') center center no-repeat;
+}
+
+.content {
+	width: 1440px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.social {
+	z-index: 1;
+	position: absolute;
+}
+
+.non {
+	display: none;
 }

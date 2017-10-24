@@ -56,11 +56,24 @@ module.exports = {
           			// [hash:6].
 
 				]
-			}
+			},
+			{
+			    test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+			    loader: 'url-loader',
+			    options: {
+		        limit: 10000,
+		        minetype: 'application/font-woff'
+		      }
+		    },
+		 //    {
+		 //      	test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+		 //      	loader: 'file-loader',
+		 //      	exclude: path.resolve(__dirname, 'scr')
+			// }
 	 	]
 	},
 	devServer: {
-		contentBase: path.join(__dirname, "dist"),
+		contentBase: path.join(__dirname, 'dist'),
   		compress: true,
   		stats: 'errors-only',
   		hot: true,

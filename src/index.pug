@@ -3,22 +3,33 @@
 doctype html
 html(lang="en")
   head
-    title= pageTitle
+    title= "Muhaparty official web site"
     //- script(src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js')
     //- link(rel="stylesheet", href='node_modules/normalize.css/normalize.css')
     //- script(src='node_modules/pixi.js/dist/pixi.min.js')
   body
-    img.non(src= require("./img/img_x2.png"))
-    img.non(src= require("./img/clouds_1.jpg"))
-    img.non(src= require("./img/clouds_2.jpg"))
-
+    //- img.non(src= require("./img/img_x0.png"))
+    //- img.non(src= require("./img/clouds_2.jpg"))
     //- img(src="/img/img_x1.png" alt="Image Title")
-    div#jello-container
-      
-      //- img.logo.social(src= require("./img/muhaparty.svg"))
-      //- div.social
-      //-   img(src= require("./img/inst.svg"))
-      //-   img(src= require("./img/vk.svg"))
+    .img-t
+    .content
+      .logo
+          img.social(src= require("./img/muha_1.svg"))
+      .social
+        .inst
+          a.icon(href="https://www.instagram.com/muhaparty/" target="_blank") 
+            img(src= require("./img/inst.svg"))
+        .vk
+          a.icon(href="https://vk.com/muhapartyy" target="_blank")
+            img(src= require("./img/vk.svg"))
+    
+    .place
+      .date
+        img(src= require("./img/date.svg"))
+      .opera
+        a(href="http://operaconcert.club/contacts/" target="_blank")
+          img(src= require("./img/opera.svg"))
+    //- #jello-container.jello
       //- if youAreUsingPug
         p You are amazing
       //- else

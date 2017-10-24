@@ -1,32 +1,100 @@
 @import "node_modules/normalize.css/normalize";
 
-html, body {
-	// margin: 0;
-	// padding: 0;
-	// height: 100%;
-	// min-height: 100%;
-	// background: url('./img/img_x2.png') center center no-repeat;
-}
+// * {
+// 	padding: 0;
+// 	margin: 0;
+// }
 
-.jello-container {
-	margin: 0;
-	padding: 0;
+// @media (min-width: 500px) {
+// 	display: flex;
+// 	align-items: stretch;
+// 	flex-direction: row;
+// 	flex-wrap: nowrap; // wrap, wrap-reverse
+// }
+
+// html, body {
+//   width:  100%;
+//   height: 100%;
+//   margin: 0px;
+// }
+
+html, body {
+	// background: blue;
+	height: 1080px;
+	margin: 0 auto;
 	height: 100%;
 	min-height: 100%;
-	// background: url('./img/img_x2.png') center center no-repeat;
+	background: url('./img/img_x0.png') center center no-repeat;
 }
+
+canvas {
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	// display:none;
+}
+
+// .jello-container {
+// 	margin: 0;
+// 	padding: 0;
+// 	height: 100%;
+// 	min-height: 100%;
+// 	max-width: 1200px;
+// 	z-index: 10;
+// 	// display: flex;
+// 	// background: url('./img/img_x2.png') center center no-repeat;
+// }
 
 .content {
-	width: 1440px;
-	margin: 0 auto;
-	text-align: right;
-}
-
-.social {
-	z-index: 1;
 	position: absolute;
+	// z-index: 1000;
+	width: 100%;
+	top: 50px;
+	// padding-top: 50px;
+	// z-index: 1;
+	display: flex;
+	align-items: center;
+	// stretch		Default. Items are stretched to fit the container
+	// center		Items are positioned at the center of the container
+	// flex-start 	Items are positioned at the beginning of the container
+	// flex-end		Items are positioned at the end of the container
+	// baseline		Items are positioned at the baseline of the container
+	// initial		Sets this property to its default value
+	// inherit		Inherits this property from its parent element
+	justify-content: space-around; // flex-start,flex-end, center, space-around, space-between
+	// flex-direction: row; // row-reverse, column, column-reverse
+	// flex-basis: 20%; // width
+	.social, .place {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		// flex: 1;
+		// order: 1
+		// z-index: 1;
+	.icon {
+		padding-left: 30px;
+	}
 }
 
-.non {
-	display: none;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	// flex-align: center;
+	// flex: 4;
+	// order: 2
+}
+
+.place {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	justify-content: center;
+	bottom: 200px;
+}
+
+.opera {
+	padding-left: 30px;
 }

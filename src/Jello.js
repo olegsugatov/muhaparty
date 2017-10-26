@@ -48,9 +48,20 @@ export default class Jello {
     app.view.style.width = w + 'px';
     app.view.style.height = h + 'px';
   }
+//   function resize() {
+//     if (window.innerWidth / window.innerHeight >= ratio) {
+//         var w = window.innerHeight * ratio;
+//         var h = window.innerHeight;
+//     } else {
+//         var w = window.innerWidth;
+//         var h = window.innerWidth / ratio;
+//     }
+//     renderer.view.style.width = w + 'px';
+//     renderer.view.style.height = h + 'px';
+//   }
   window.onresize = resize;
-
 // ticker.autoStart = true;
+
   var settings = {
     speed: 0.5,
     scale: 50,

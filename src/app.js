@@ -5,6 +5,7 @@
 import css from './app.scss';
 import 'pixi.js';
 import Jello from './Jello';
+import './analytics.js'
 
 // ReactDOM.render(
 //   <h1>Hello, world!</h1>,
